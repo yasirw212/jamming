@@ -5,8 +5,13 @@ function App() {
   
 
   return (
-    <div className='background__gradient'>
-        <Navbar />
+    <div>
+        <header>
+          <Navbar />
+        </header>
+        <main className='background__gradient' style={{height: '100vh'}} >
+
+        </main>
     </div>
   )
 }
