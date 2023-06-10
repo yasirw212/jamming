@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background__gradient {
+        /* ff 3.6+ */
+        background:-moz-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
+    
+        /* opera 11.10+ */
+        background:-o-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
+    
+        /* ie 10+ */
+        background:-ms-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
+    
+        /* global 92%+ browsers support */
+        background:radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
+
+}
