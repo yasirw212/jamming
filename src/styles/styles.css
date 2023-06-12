@@ -21,3 +21,21 @@
         background:radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
 
 }
+
+.text__gradient {
+    background:radial-gradient(circle at 50% 50%, #9C27B0 0%, #A91CC1 50%, #5A075A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    /* width: 100vw; */
+    padding: 4.5em 3em;
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        padding: 6em;
+    }
+}
