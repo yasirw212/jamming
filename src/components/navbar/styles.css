@@ -7,11 +7,7 @@
     padding-left: 1.75em;
     align-items: center;
     letter-spacing: 2px;
-    background: #fff;
-    background:radial-gradient(circle at 50% 50%, #9C27B0 0%, #A91CC1 50%, #5A075A 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 .navbar-brand  {
