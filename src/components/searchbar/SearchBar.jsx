@@ -3,11 +3,22 @@ import './styles.css'
 import { SpotifyContext } from '../../context/context'
 
 const SearchBar = ({searchTracks, }) => {
-  const {term, onChange} = React.useContext(SpotifyContext);
+  const {term, onChange, searchResults, getResults} = React.useContext(SpotifyContext);
 
-  const search = React.useCallback(() => {
-    searchTracks(term);
+  const search = React.useCallback(async () => {
+    let results = await searchTracks(term);
+    let arr = []
+    
+    await results.items.map(result => {
+      const {album, artists, name} = result
+      arr.push({album: album.name, name: name, artist: artists[0].name, inPlayList: false})
+    })
+    getResults(arr) 
   }, [searchTracks, term]);
+
+  React.useEffect(() => {
+    console.log(searchResults)
+  },[searchResults])
 
   const handleTermChange = React.useCallback((event) => {
     onChange(event);

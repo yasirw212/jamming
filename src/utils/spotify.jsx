@@ -55,10 +55,9 @@ const Spotify = {
             })
             if(response.ok){
                 const jsonResponse = await response.json()
-                console.log(jsonResponse)
-                return jsonResponse
-                // accessToken = jsonResponse
-                // return accessToken
+                // console.log(jsonResponse.tracks)
+                return jsonResponse.tracks
+                
             }
         } catch (error) {
             console.log(error)
