@@ -1,6 +1,6 @@
 const CLIENT_ID = 'b74541845f694f6fb6db626d99d9b5c9'
 const CLIENT_SECRET = '179047804c7f4109b381086ff47756df'
-const redirect_Uri = 'http://localhost:5173/callback/'
+const redirect_Uri = 'https://jamwithspotify.netlify.app/callback/'
 let accessToken;
 
 
