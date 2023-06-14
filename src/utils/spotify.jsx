@@ -3,10 +3,11 @@ const CLIENT_SECRET = '179047804c7f4109b381086ff47756df'
 const redirect_Uri = 'http://localhost:5173/callback/'
 let accessToken;
 
+
 const Spotify = {
   getAccessToken() {
     if (accessToken) {
-        console.log(accessToken)
+        
       return accessToken;
     } 
     const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
