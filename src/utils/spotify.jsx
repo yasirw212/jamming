@@ -20,7 +20,8 @@ const Spotify = {
       console.log(accessToken)
       return accessToken;
     } else {
-      const accessUrl = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirect_Uri}`;
+      const accessUrl = 
+`https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=token&scope=playlist-modify-public&redirect_uri=https://jamwithspotify.netlify.app/callback/`;
       window.location = accessUrl;
     }
   },
