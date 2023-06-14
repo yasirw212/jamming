@@ -1,27 +1,10 @@
-
-
-.search-results-container {
-    background: #fff;
-    border-radius: 8px;
-    padding: 2rem 2rem;
-    color: #9C27B0;
-    max-height: 750px;
-    overflow-y: scroll;
-}
-
-.results {
-    margin-top: 2rem;
-}
-
-.track-card-component {
+.waiting-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #9C27B0;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
-.subtext {
-    margin-top: .5rem;
-}
+.waiting-subtext {
+    margin-top: 1rem;
+} 

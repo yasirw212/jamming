@@ -1,0 +1,114 @@
+.search-results-container,
+.playlist-container {
+    background: #131313;
+    border-radius: 8px;
+    padding: 2rem 2rem;
+    color: #d7d7d7;
+    max-height: 750px;
+    min-height: 350px;
+    overflow-y: scroll;
+    text-align: center;
+    box-shadow: 0px 0px 3px #d7d7d7;
+    margin-top: 1rem;
+}
+
+.search-results-container {
+    margin-left: 1rem;
+}
+
+/* Search Results Component */
+.results {
+    margin-top: 2rem;
+}
+
+.track-card-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    /* border-bottom: 1px solid #9C27B0; */
+    border-bottom: 1px solid #0f9b0f;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.track-subtext {
+    margin-top: .5rem;
+}
+
+/* Playlist Component */
+.playlist-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.playlist-title {
+    padding: .5rem 1rem;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #d7d7d7;
+    background: #434343;
+    border-bottom: 2px solid #0f9b0f;
+}
+
+.playlist-btn {
+    background-color: #45a247;
+    border: 1px solid #131313;
+    color: #fff;
+    border-radius: 25px;
+    width: 175px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    margin: 2rem auto 0 auto;
+    transition: ease-in .200s;
+    text-shadow: 0px 0px 5px #131313;
+}
+
+.playlist-btn:hover {
+    background: #2F7336;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .search-results-container,
+    .playlist-container {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .track-subtext {
+        font-size: .8rem;
+    }
+
+    .track-title {
+        font-size: 1rem;
+    }
+
+    .playlist-btn {
+        width: 160px;
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .playlist-title {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .playlist-title {
+        font-size: 1rem;
+        
+    }
+
+    .playlist-btn {
+        width: 160px;
+        font-size: .65rem;
+    }
+}
