@@ -2,6 +2,7 @@ import React from 'react'
 import './styles.css'
 import logo from '../../assets/icons8-spotify-50.png'
 
+
 export default function Navbar() {
   return (
     <div className='navbar text__gradient' >
