@@ -1,6 +1,6 @@
 const CLIENT_ID = 'b74541845f694f6fb6db626d99d9b5c9'
 const CLIENT_SECRET = '179047804c7f4109b381086ff47756df'
-const redirect_Uri = 'http://localhost:5173/callback/'
+const redirect_Uri = 'https://jamwithspotify.netlify.app/callback/'
 let accessToken;
 
 const Spotify = {
@@ -24,27 +24,6 @@ const Spotify = {
     }
   },
 
-    // getAccessToken: async () => {
-    //     try {
-    //       const response = await fetch(`https://accounts.spotify.com/api/token`, {
-    //         method: 'POST',
-    //         headers: {
-    //           'Content-type': 'application/x-www-form-urlencoded'
-    //          },
-    //         body: `grant_type=client_credentials&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`
-    //       })
-    //       if(response.ok){
-    //         const jsonResponse = await response.json()
-    //         console.log(jsonResponse)
-    //         return jsonResponse
-    //       }
-          
-    //     } 
-    //     catch (error) {
-    //       console.log(error)
-    //     }
-    //   },
-
     search: async (term) => {
         const accessToken = await Spotify.getAccessToken();
         try {
@@ -55,7 +34,6 @@ const Spotify = {
             })
             if(response.ok){
                 const jsonResponse = await response.json()
-                // console.log(jsonResponse.tracks)
                 return jsonResponse.tracks
                 
             }
@@ -63,28 +41,6 @@ const Spotify = {
             console.log(error)
         }   
     },
-
-  
-    // .then(response => {
-    //     if(response.ok){
-    //         console.log(response.json())
-    //         let jsonResponse = response.json()
-    //     }
-    // })
-    // .then(jsonResponse => {
-    //     console.log(jsonResponse())
-    //     if (!jsonResponse.tracks) {
-    //         return [];
-    //   }
-    //   return jsonResponse.tracks.items.map(track => ({
-    //     id: track.id,
-    //     name: track.name,
-    //     artist: track.artists[0].name,
-    //     album: track.album.name,
-    //     uri: track.uri
-    //   }));
-    // });
-  
 
   savePlaylist(name, trackUris) {
     if (!name || !trackUris.length) {
