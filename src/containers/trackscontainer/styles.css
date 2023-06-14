@@ -1,9 +1,14 @@
 
 .tracks-container {
     display: grid;
-    grid-template: auto / repeat(2, 1fr);
+    grid-template: auto / 1.25fr 1fr;
     margin-top: 5em;
     padding-bottom: 5em;
+    grid-gap: 100px;
+    max-width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {

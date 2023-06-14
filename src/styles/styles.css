@@ -5,38 +5,65 @@
 }
 
 .background__gradient {
-        /* ff 3.6+ */
-        background:-moz-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
-    
-        /* safari 5.1+,chrome 10+ */
-        background:-webkit-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
-    
-        /* opera 11.10+ */
-        background:-o-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
-    
-        /* ie 10+ */
-        background:-ms-radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
-    
-        /* global 92%+ browsers support */
-        background:radial-gradient(ellipse at 50% 50%, rgba(156, 39, 176, 1) 0%, rgba(169, 28, 193, 1) 50%, rgba(90, 7, 90, 1) 100%);
+     /* ff 3.6+ */
+     background:-moz-radial-gradient(ellipse at 50% 50%, #2DF719 0%, #038903 100%);
 
+     /* safari 5.1+,chrome 10+ */
+     background:-webkit-radial-gradient(ellipse at 50% 50%, #2DF719 0%, #038903 100%);
+ 
+     /* opera 11.10+ */
+     background:-o-radial-gradient(ellipse at 50% 50%, #2DF719 0%, #038903 100%);
+ 
+     /* ie 10+ */
+     background:-ms-radial-gradient(ellipse at 50% 50%, #2DF719 0%, #038903 100%);
+ 
+     /* global 92%+ browsers support */
+     background:radial-gradient(ellipse at 50% 50%, #2DF719 0%, #038903 100%);
+     background-image: url('../assets/music-background.jpg'), radial-gradient(circle at 50% 50%, #28C817 0%, #038903 87%);
+     background-blend-mode:hard-light;
+     background-size: 100% 100%;
 }
 
 .text__gradient {
-    background:radial-gradient(circle at 50% 50%, #9C27B0 0%, #A91CC1 50%, #5A075A 100%);
+    background:radial-gradient(circle at 50% 50%, #28C817 0%, #038903 87%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+header {
+    max-width: 100vw;
 }
 
 main {
     height: 100%;
     min-height: 100vh;
     padding: 4.5em 3em ;
+    position: relative;
+    top: 12.5vh;
+    max-width: 100%;
+    overflow: hidden;
+   
 }
+
 
 @media only screen and (min-width: 992px) {
     main {
         padding: 3em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        min-width: 100%;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: auto auto / repeat(1, 1fr) ;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    main {
+        min-width: 100vw;
     }
 }

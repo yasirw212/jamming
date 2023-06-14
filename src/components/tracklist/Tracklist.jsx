@@ -1,5 +1,6 @@
 import React from 'react'
 import Track from '../track/Track'
+import './styles.css'
 
 const Tracklist = ({tracks}) => {
   return (

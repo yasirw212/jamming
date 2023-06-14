@@ -15,7 +15,7 @@ function App() {
         <header>
           <Navbar />
         </header>
-        <main className='background__gradient' >
+        <main className='main-container background__gradient' >
           <SearchBar searchTracks={Spotify.search} onChange={onChange} term={term} />
           <TracksContainer />
         </main>

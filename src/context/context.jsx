@@ -18,21 +18,19 @@ function SpotifyContextProvider(props){
     }
 
     const addToPlaylist = (track) => {
-        track.inPlaylist = true
+        track.inPlayList = true
         setPlaylist(prev => [...prev, track])
         console.log(playlist)
     }
 
     const removeFromPlaylist = (track) => {
-        track.inPlaylist = false
-        let arr = searchResults
-        let index = arr.findIndex(item => item.name == track.name)
-        arr.splice(index, 1)
-        setSearchResults(prev => arr)
+        track.inPlayList = false
+        let arr = playlist
+        setPlaylist(prev => arr.filter(item => item.name !== track.name) )
     }
 
     return (
-        <SpotifyContext.Provider value={{onChange: onChange, term: term, searchResults: searchResults, getResults: getResults, addToPlaylist: addToPlaylist, removeFromPlaylist: removeFromPlaylist }}>
+        <SpotifyContext.Provider value={{onChange: onChange, term: term, searchResults: searchResults, getResults: getResults, addToPlaylist: addToPlaylist, removeFromPlaylist: removeFromPlaylist, playlist: playlist, setPlaylist: setPlaylist }}>
             {props.children}
         </SpotifyContext.Provider>
     )
