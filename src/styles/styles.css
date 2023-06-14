@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'inter', 'sans-serif';
 }
+body {
+    background: #000000;
+}
 
 .background__gradient {
      /* ff 3.6+ */
