@@ -28,10 +28,10 @@ pipeline {
                 sh ('docker push yasirwilliams/jamming-app:latest')
             }
         }
-        post {
-            always {
-                sh 'docker logout'
-            }
+    }
+    post {
+        always {
+            sh 'docker logout'
         }
     }
 }
