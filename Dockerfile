@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-WORKDIR /webapp
+WORKDIR /jamming-app
 
 COPY package.json .
 
