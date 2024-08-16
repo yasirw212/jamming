@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Pull code from git') {
             steps {
-                git branch: 'main', url: 'https://github.com/yasirw212/jamming.git'
+                git branch: 'master', url: 'https://github.com/yasirw212/jamming.git'
             }
         }
 
