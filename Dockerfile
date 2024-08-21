@@ -8,6 +8,6 @@ COPY . .
 
 RUN npm install 
 
-EXPOSE 8085
+EXPOSE 80
 
 ENTRYPOINT ["npm", "run", "dev"]
