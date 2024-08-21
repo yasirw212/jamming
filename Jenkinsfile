@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Push'){
             steps {
-                sh ('docker push yasirwilliams/jamming-app:2.0')
+                sh ('docker push yasirwilliams/jamming-app:latest')
             }
         }
     }
